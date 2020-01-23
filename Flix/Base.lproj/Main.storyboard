@@ -17,7 +17,10 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wv0-mp-Ofy">
                                 <rect key="frame" x="0.0" y="44" width="414" height="692"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.25151797279999999" green="0.25151797279999999" blue="0.25151797279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" red="0.25151797279999999" green="0.25151797279999999" blue="0.25151797279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.25151797279999999" green="0.25151797279999999" blue="0.25151797279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="162" id="p5X-Vm-nGW" customClass="MovieCell" customModule="Flix" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="162"/>
@@ -26,25 +29,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1F2-UG-SGW">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1F2-UG-SGW">
                                                     <rect key="frame" x="15" y="11" width="101" height="140"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoE-ad-iC2">
                                                     <rect key="frame" x="127" y="50" width="233" height="101"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGr-Cl-9gK">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGr-Cl-9gK">
                                                     <rect key="frame" x="127" y="11" width="233" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.25151797279999999" green="0.25151797279999999" blue="0.25151797279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="tintColor" red="0.25151797279999999" green="0.25151797279999999" blue="0.25151797279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="posterView" destination="1F2-UG-SGW" id="RHy-oq-kwV"/>
@@ -55,7 +60,8 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="Wv0-mp-Ofy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DoS-p0-vsx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wv0-mp-Ofy" secondAttribute="trailing" id="Zen-1V-crt"/>
@@ -71,16 +77,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="92.203898050974516"/>
+            <point key="canvasLocation" x="1076.8115942028987" y="92.119565217391312"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Dt-m4-BCs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KIV-8C-956" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Syd-ha-2TV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.25151797279999999" green="0.25151797279999999" blue="0.25151797279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
