@@ -8,6 +8,3 @@ Skills Learned:
 - Basics of Swift coding language
 
 <img src="http://g.recordit.co/WIa1rySiWk.gif" width=250><br>
-
-<img src="http://g.recordit.co/6uZAu3O2jF.gif" width=250><br>
-
